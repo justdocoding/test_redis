@@ -97,7 +97,6 @@ func TestRedisMo(command string) {
 	}
 	defer c.Close()
 	if command == "set" {
-		// test_redis.TestPrint(100)
 		test_redis.TestSet(c)
 	}
 	if command == "hscan" {
