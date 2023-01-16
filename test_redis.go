@@ -3,7 +3,6 @@ package test_redis
 import (
 	"fmt"
 	"github.com/garyburd/redigo/redis"
-	"github.com/justdocoding/test_redis"
 	"strconv"
 )
 
@@ -98,8 +97,7 @@ func TestRedisMo(command string) {
 	}
 	defer c.Close()
 	if command == "set" {
-		// test_redis.TestPrint(100)
-		test_redis.TestSet(c)
+		TestSet(c)
 	}
 	if command == "hscan" {
 		TestHscan(c)
