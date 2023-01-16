@@ -3,7 +3,6 @@ package test_redis
 import (
 	"fmt"
 	"github.com/garyburd/redigo/redis"
-	"github.com/justdocoding/test_redis"
 	"strconv"
 )
 
